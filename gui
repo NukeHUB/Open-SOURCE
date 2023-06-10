@@ -1,0 +1,199 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local b1 = Instance.new("TextButton")
+local GUIName = Instance.new("TextLabel")
+local b2 = Instance.new("TextButton")
+local b3 = Instance.new("TextButton")
+local b4 = Instance.new("TextButton")
+local b5 = Instance.new("TextButton")
+local b7 = Instance.new("TextButton")
+local b8 = Instance.new("TextButton")
+local b9 = Instance.new("TextButton")
+local extra1 = Instance.new("TextButton")
+local b6 = Instance.new("TextButton")
+local extra2 = Instance.new("TextButton")
+local extra3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(197, 197, 197)
+Frame.Position = UDim2.new(0.305872053, 0, 0.355555564, 0)
+Frame.Size = UDim2.new(0, 381, 0, 182)
+
+b1.Name = "b1"
+b1.Parent = Frame
+b1.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b1.Position = UDim2.new(-0.00262467191, 0, 0.280219793, 0)
+b1.Size = UDim2.new(0, 55, 0, 34)
+b1.Font = Enum.Font.LuckiestGuy
+b1.Text = "Ori"
+b1.TextColor3 = Color3.fromRGB(0, 0, 0)
+b1.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+GUIName.Name = "GUI Name"
+GUIName.Parent = Frame
+GUIName.BackgroundColor3 = Color3.fromRGB(206, 206, 206)
+GUIName.BorderColor3 = Color3.fromRGB(181, 181, 181)
+GUIName.Position = UDim2.new(0, 0, 0.00549450563, 0)
+GUIName.Size = UDim2.new(0, 382, 0, 50)
+GUIName.Font = Enum.Font.Unknown
+GUIName.Text = "orihub"
+GUIName.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIName.TextScaled = true
+GUIName.TextSize = 14.000
+GUIName.TextWrapped = true
+
+b2.Name = "b2"
+b2.Parent = Frame
+b2.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b2.Position = UDim2.new(-0.00209969282, 0, 0.815772414, 0)
+b2.Size = UDim2.new(0, 55, 0, 33)
+b2.Font = Enum.Font.LuckiestGuy
+b2.Text = "Ori"
+b2.TextColor3 = Color3.fromRGB(0, 0, 0)
+b2.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b3.Name = "b3"
+b3.Parent = Frame
+b3.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b3.Position = UDim2.new(-0.00262467191, 0, 0.543956101, 0)
+b3.Size = UDim2.new(0, 55, 0, 34)
+b3.Font = Enum.Font.LuckiestGuy
+b3.Text = "Ori"
+b3.TextColor3 = Color3.fromRGB(0, 0, 0)
+b3.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b4.Name = "b4"
+b4.Parent = Frame
+b4.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b4.Position = UDim2.new(0.254593164, 0, 0.280219793, 0)
+b4.Size = UDim2.new(0, 55, 0, 34)
+b4.Font = Enum.Font.LuckiestGuy
+b4.Text = "Ori"
+b4.TextColor3 = Color3.fromRGB(0, 0, 0)
+b4.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b5.Name = "b5"
+b5.Parent = Frame
+b5.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b5.Position = UDim2.new(0.254593164, 0, 0.543956041, 0)
+b5.Size = UDim2.new(0, 55, 0, 34)
+b5.Font = Enum.Font.LuckiestGuy
+b5.Text = "Ori"
+b5.TextColor3 = Color3.fromRGB(0, 0, 0)
+b5.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b7.Name = "b7"
+b7.Parent = Frame
+b7.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b7.Position = UDim2.new(0.509186327, 0, 0.280219793, 0)
+b7.Size = UDim2.new(0, 55, 0, 34)
+b7.Font = Enum.Font.LuckiestGuy
+b7.Text = "Ori"
+b7.TextColor3 = Color3.fromRGB(0, 0, 0)
+b7.TextSize = 14.000
+b7.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b8.Name = "b8"
+b8.Parent = Frame
+b8.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b8.Position = UDim2.new(0.509186327, 0, 0.543956041, 0)
+b8.Size = UDim2.new(0, 55, 0, 34)
+b8.Font = Enum.Font.LuckiestGuy
+b8.Text = "Ori"
+b8.TextColor3 = Color3.fromRGB(0, 0, 0)
+b8.TextSize = 14.000
+b8.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b9.Name = "b9"
+b9.Parent = Frame
+b9.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b9.Position = UDim2.new(0.509186327, 0, 0.813186824, 0)
+b9.Size = UDim2.new(0, 55, 0, 34)
+b9.Font = Enum.Font.LuckiestGuy
+b9.Text = "Ori"
+b9.TextColor3 = Color3.fromRGB(0, 0, 0)
+b9.TextSize = 14.000
+b9.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+extra1.Name = "extra1"
+extra1.Parent = Frame
+extra1.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+extra1.Position = UDim2.new(0.748031437, 0, 0.280219793, 0)
+extra1.Size = UDim2.new(0, 96, 0, 34)
+extra1.Font = Enum.Font.LuckiestGuy
+extra1.Text = "Ori"
+extra1.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra1.TextSize = 14.000
+extra1.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+b6.Name = "b6"
+b6.Parent = Frame
+b6.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+b6.Position = UDim2.new(0.254593164, 0, 0.807692349, 0)
+b6.Size = UDim2.new(0, 55, 0, 34)
+b6.Font = Enum.Font.LuckiestGuy
+b6.Text = "Ori"
+b6.TextColor3 = Color3.fromRGB(0, 0, 0)
+b6.TextSize = 14.000
+b6.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+extra2.Name = "extra2"
+extra2.Parent = Frame
+extra2.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+extra2.Position = UDim2.new(0.750656188, 0, 0.543956041, 0)
+extra2.Size = UDim2.new(0, 95, 0, 34)
+extra2.Font = Enum.Font.LuckiestGuy
+extra2.Text = "Ori"
+extra2.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra2.TextSize = 14.000
+extra2.MouseButton1Down:Connect(function()
+	--Script
+end)
+
+extra3.Name = "extra3"
+extra3.Parent = Frame
+extra3.BackgroundColor3 = Color3.fromRGB(89, 155, 255)
+extra3.Position = UDim2.new(0.748031497, 0, 0.807692289, 0)
+extra3.Size = UDim2.new(0, 95, 0, 34)
+extra3.Font = Enum.Font.LuckiestGuy
+extra3.Text = "Ori"
+extra3.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra3.TextSize = 14.000
+extra3.MouseButton1Down:Connect(function()
+	--Script
+end)
