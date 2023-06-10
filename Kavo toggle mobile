@@ -1,0 +1,45 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local orihub = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0, 0, 0.3936508, 0)
+Frame.Size = UDim2.new(0.0350569673, 0, 0.058730159, 0)
+Frame.Active = true
+Frame.Draggable = true
+
+orihub.Name = "orihub"
+orihub.Parent = Frame
+orihub.BackgroundColor3 = Color3.fromRGB(209, 209, 209)
+orihub.BorderColor3 = Color3.fromRGB(203, 203, 203)
+orihub.Size = UDim2.new(0.975000024, 0, 0.972972989, 0)
+orihub.Font = Enum.Font.Unknown
+orihub.Text = "Ori"
+orihub.TextColor3 = Color3.fromRGB(0, 0, 0)
+orihub.TextScaled = true
+orihub.TextSize = 14.000
+orihub.TextStrokeColor3 = Color3.fromRGB(93, 255, 104)
+orihub.TextWrapped = true
+orihub.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+end)
+
+UITextSizeConstraint.Parent = orihub
+UITextSizeConstraint.MaxTextSize = 14
+
+--Input YOUR KAVO Gui HERE
