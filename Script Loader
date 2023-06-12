@@ -1,0 +1,65 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local img = Instance.new("ImageLabel")
+local name = Instance.new("TextLabel")
+local LoaderButton = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.409999996, 0, 0.350482315, 0)
+Frame.Size = UDim2.new(0, 254, 0, 154)
+
+img.Name = "img"
+img.Parent = Frame
+img.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
+img.BorderColor3 = Color3.fromRGB(255, 255, 255)
+img.Position = UDim2.new(0.779527545, 0, 0, 0)
+img.Size = UDim2.new(0, 56, 0, 50)
+img.Image = "http://www.roblox.com/asset/?id=1796269892"
+
+name.Name = "name"
+name.Parent = Frame
+name.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
+name.BorderColor3 = Color3.fromRGB(255, 255, 255)
+name.Size = UDim2.new(0, 200, 0, 50)
+name.Font = Enum.Font.SourceSansBold
+name.Text = "Script Loader"
+name.TextColor3 = Color3.fromRGB(0, 0, 0)
+name.TextSize = 14.000
+
+LoaderButton.Name = "LoaderButton"
+LoaderButton.Parent = Frame
+LoaderButton.BackgroundColor3 = Color3.fromRGB(45, 112, 200)
+LoaderButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LoaderButton.Position = UDim2.new(0, 0, 0.38961041, 0)
+LoaderButton.Size = UDim2.new(0, 254, 0, 50)
+LoaderButton.Font = Enum.Font.SourceSans
+LoaderButton.Text = "Load Ori"
+LoaderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoaderButton.TextSize = 14.000
+LoaderButton.Parent.MouseButton1Click:Connect(function()
+	print("Ori : Loaded")
+end)
+
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
+credits.BorderColor3 = Color3.fromRGB(255, 255, 255)
+credits.Position = UDim2.new(0.00393700786, 0, 0.77922076, 0)
+credits.Size = UDim2.new(0, 252, 0, 34)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "Made By : Mr.Exploit"
+credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+credits.TextSize = 14.000
