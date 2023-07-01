@@ -1,0 +1,100 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local executor = Instance.new("TextBox")
+local execute = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local clear = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local name = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.267272741, 0, 0.143086821, 0)
+Frame.Size = UDim2.new(0, 511, 0, 324)
+script.Parent.Active = true
+script.Parent.Draggable = true
+
+UICorner.Parent = Frame
+
+executor.Name = "executor"
+executor.Parent = Frame
+executor.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+executor.BorderColor3 = Color3.fromRGB(138, 138, 138)
+executor.BorderSizePixel = 0
+executor.Position = UDim2.new(0.166340515, 0, 0.179012343, 0)
+executor.Size = UDim2.new(0, 341, 0, 208)
+executor.Font = Enum.Font.SourceSans
+executor.PlaceholderText = "-- Mr.Exploit Source v2"
+executor.Text = ""
+executor.TextColor3 = Color3.fromRGB(0, 0, 0)
+executor.TextSize = 14.000
+executor.TextXAlignment = Enum.TextXAlignment.Left
+executor.TextYAlignment = Enum.TextYAlignment.Top
+
+execute.Name = "execute"
+execute.Parent = Frame
+execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+execute.BorderSizePixel = 0
+execute.Position = UDim2.new(0.0410958901, 0, 0.876543224, 0)
+execute.Size = UDim2.new(0, 145, 0, 33)
+execute.Font = Enum.Font.SourceSans
+execute.Text = "Execute"
+execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+execute.TextSize = 14.000
+execute.Parent.MouseButton1Click:Connect(function()
+	loadstring(script.Parent.Parent.Source.Text)()
+end)
+
+UICorner_2.Parent = execute
+
+clear.Name = "clear"
+clear.Parent = Frame
+clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clear.BorderSizePixel = 0
+clear.Position = UDim2.new(0.675146759, 0, 0.876543224, 0)
+clear.Size = UDim2.new(0, 145, 0, 33)
+clear.Font = Enum.Font.SourceSans
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+clear.TextSize = 14.000
+clear.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Source.Text = ''
+end)
+
+UICorner_3.Parent = clear
+
+name.Name = "name"
+name.Parent = Frame
+name.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+name.BorderSizePixel = 0
+name.Position = UDim2.new(0.38943249, 0, 0, 0)
+name.Size = UDim2.new(0, 113, 0, 38)
+name.Font = Enum.Font.Unknown
+name.Text = "Mr Exploit Source"
+name.TextColor3 = Color3.fromRGB(255, 25, 29)
+name.TextSize = 14.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.436399221, 0, 0.830246925, 0)
+ImageLabel.Size = UDim2.new(0, 64, 0, 55)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=4624538756"
